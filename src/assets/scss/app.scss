@@ -1,0 +1,12 @@
+@import 'settings';
+@import 'foundation-emails';
+
+a h2, a h3, a h4, a h5 {
+	font-weight: 700;
+	color: $secondary-color;
+}
+
+button {
+	text-transform: uppercase;
+	font-size: 10px;
+}
