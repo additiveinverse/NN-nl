@@ -1,0 +1,119 @@
+---
+company: Net Nanny
+subject: 7 Surprising Reasons for School Anxiety
+date-month: August
+date-year: 2016
+date-vol: IV
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201608newsletter4&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+blog: [{
+		"title": "Not Your Typical Back to School Tips",
+		"url": "https://www.netnanny.com/blog/not-your-traditional-back-to-school-tips/",
+		"image": "https://www.netnanny.com/assets/blogimages/201608notyourtypical.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201608newsletter3&utm_content=20160810notyourtypical&ace=----ACE_ID----"
+	},
+	{
+		"title": "Motivate Your Teenager to Do School Work",
+		"url": "https://www.netnanny.com/blog/how-to-motivate-your/",
+		"image": "https://www.netnanny.com/assets/blogimages/201608motivateyourteenager.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201608newsletter3&utm_content=201608motivateyourteen&ace=----ACE_ID----"
+	},
+	{
+		"title": "Rules for Cell Phone Use in Schools",
+		"url": "https://www.netnanny.com/blog/rules-for-cell-phone-use-in-school/",
+		"image": "https://www.netnanny.com/assets/blogimages/201608cellphonesinschool.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201608newsletter3&utm_content=201608settingboundaries&ace=----ACE_ID----"
+	}
+]
+---
+<container>
+	<spacer size="24"></spacer>
+	<callout>
+	<row class="collapse">
+		<columns>
+			<spacer size="18"></spacer>
+			<img src="{{ url-blogasset }}201608howtoeasefinal2.jpg" alt="How to Ease the first Day of School Anxiety" class="text-center" height="325px" />
+			<spacer size="18"></spacer>
+			<h4 style="padding-left: 18px;">How to Ease the First Day of School Anxiety</h4>
+			<button class="secondary radius" href="{{ url-blog }}how-to-ease-the-first/{{{ tracking-campaign }}}20160816firstdayanxiety{{{ tracking-ace }}}">Read More &raquo;</button>
+		</columns>
+	</row>
+	</callout>
+	<row class="collapse">
+		<columns large="12">
+			<a href="{{ url-webroot }}{{{tracking-campaign}}}2016summersavings{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-08-b2s2.jpg" alt="Summer Savings of up to 25% off" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}giveaway/7-surprising-reasons-kids-get-school-anxiety/{{{tracking-campaign}}}201608227anxietyreasons{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-08-whitepaperbanner.jpg" alt="7 Surprising Reasons for School Anxiety" class="float-center" />
+			</a>
+			<table>
+			<tr>
+			<td style="padding-left: 18px;">
+			<spacer size="18"></spacer>
+			<p>The booklet includes actionable strategies on how your family can work together and with the school to reduce anxiety for your child.</p>
+				</td>
+				<td width="190">
+			<spacer size="18"></spacer>
+			<button href="{{ url-webroot }}giveaway/7-surprising-reasons-kids-get-school-anxiety/{{{tracking-campaign}}}201608227anxietyreasons{{{ tracking-ace }}}" class="radius secondary">Download yours today!</button>
+				</td>
+				</tr>
+				</table>
+			</columns>
+		</columns>
+	</row>
+
+<callout>
+	<row>
+			<columns><h2 class="title">{{ company }} in the News</h2></columns>
+	</row>
+	<row>
+			<columns large="4" small="12">
+				<center><img src="{{ url-asset }}NNL-08-news4.jpg" alt="Net Nanny in the News" height="180"/></center>
+			</columns>
+			<columns large="8" small="12">
+				<strong>First Time Parent Magazine</strong> featured Net Nanny in their ‘August Featured Products’ section this month. The article stated, "...to effectively cut the technology cord, parents can look to effective parental control products like Net Nanny, to cut screen time and limit the harmful side effects of issues like blue light exposure."
+			</columns>
+	</row>
+</callout>
+
+	<row>
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+
+	<row>
+		{{#each blog}}
+			<columns large="4">
+				<p><img height="100" src="{{ url-blogasset }}{{ this.image }}"  alt="{{ this.title }}"/></p>
+				<p class="blog">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius secondary ">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<callout class="secondary">
+		<row class="collapse">
+			<columns large="3" small="12">
+				<img src="{{ url-asset }}tablet.png" alt="Not sure how to view Net Nanny Reports?" />
+			</columns>
+			<columns large="9" small="12">
+				<h6 style="padding-left: 18px;">Set screen time limits to pause the internet during family dinners, sleep time, or when your family needs a tech time out.</h6>
+				<button class="radius primary" href="https://www.netnanny.com/features/time-management/{{{ tracking-campaign }}}201608timemanagement{{{ tracking-ace }}}">Learn how! &raquo;</button>
+			</columns>
+		</row>
+	</callout>
+
+</container>
+<spacer size="24"></spacer>wow
