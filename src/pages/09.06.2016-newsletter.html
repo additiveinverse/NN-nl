@@ -1,0 +1,112 @@
+---
+company: Net Nanny
+subject: When to Punish & Reward Kids with Screen Time
+date-month: Sept.
+date-year: 2016
+date-vol: II
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201609newsletter2&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+blog: [{
+		"title": "5 Ways to Make a Successful Middle School Transition",
+		"url": "https://www.netnanny.com/blog/fivehelpfulwaysto/",
+		"image": "https://www.netnanny.com/assets/blogimages/201609FiveHelpfulMiddleschool.jpeg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201609newsletter2&utm_content=201609fivehelpfulways&ace=----ACE_ID----"
+	},
+	{
+		"title": "Should Schools Teach Responsible Social Media Behavior",
+		"url": "https://www.netnanny.com/blog/shouldschoolsteachsocial/",
+		"image": "https://www.netnanny.com/assets/blogimages/_resampled/ResizedImageWzQ3OCwzMDZd/201609ShouldSchoolTeach.jpeg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201609newsletter2&utm_content=201609shouldschoolsteach&ace=----ACE_ID----"
+	},
+	{
+		"title": "Parent-Teacher Relationships: Easy Ways to Connect Home and School",
+		"url": "https://www.netnanny.com/blog/parentteacherrelationships/",
+		"image": "https://www.netnanny.com/assets/blogimages/_resampled/ResizedImageWzUzMSwzNTVd/201609ParentTeacher.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201609newsletter2&utm_content=201609parentteacher&ace=----ACE_ID----"
+	}
+]
+---
+<container>
+	<spacer size="24"></spacer>
+
+	<row class="collapse">
+		<columns large="12">
+			<a href="{{ url-webroot }}{{{tracking-campaign}}}2016backtoschool4{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-09-b2s-banner-new.jpg" alt="Back to School Sale Save Up to 25% Off" class="float-center" width="600" />
+			</a>
+		</columns>
+	</row>
+
+
+	<row class="collapse" >
+		<columns bgcolor="#DBD2BA">
+			<center>
+			<a href="{{ url-blog }}whentopunishandreward{{{ tracking-campaign }}}201609whentopunishandreward{{{ tracking-ace }}}" >
+			<img src="{{ url-blogasset }}201609WhenToPunish.jpg" alt="Why Schools Block Websites and So Should You" height="355" />
+			</a>
+			<spacer size="18"></spacer>
+			<h5 style="padding-left: 18px;">When to Punish and Reward Kids with Screen Time</h5>
+			<button class="radius" href="{{ url-blog }}whentopunishandreward{{{ tracking-campaign }}}201609whentopunish{{{ tracking-ace }}}">Read More &raquo;</button>
+			</center>
+		</columns>
+	</row>
+
+	<spacer size="18"></spacer>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}giveaway/7-surprising-reasons-kids-get-school-anxiety/{{{tracking-campaign}}}201609anxietyreasons{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-08-whitepaperbanner.jpg" alt="7 Surprising Reasons for School Anxiety" class="float-center" />
+			</a>
+			<spacer size="9"></spacer>
+				<small>The booklet includes actionable strategies on how your family can work together and with the school to reduce anxiety for your child.</small>
+			<spacer size="9"></spacer>
+		</columns>
+	</row>
+
+	<row>
+		<columns><h2 class="title">{{ company }} in the News</h2></columns>
+	</row>
+	<row>
+		<columns >
+			<center><img src="{{ url-asset }}NNL-09-digitaltrends.jpg" alt="Net Nanny in the News" /></center>
+			<spacer size="18"></spacer>
+			<h4>How young is too young for a smart phone? <br/><span>We asked the experts</span></h4>
+			<p>Virtually every kid wants a smart phone and the peer pressure to own one is huge. While smartphones have great potential to enrich lives, they can also cause serious problems. <a href="https://www.netnanny.com/blog/howyoungistoo/">Click here</a> to see what the experts have to say about buying your child their first smartphone.</p>
+		</columns>
+	</row>
+
+	<row>
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+
+	<row>
+		{{#each blog}}
+			<columns large="4">
+				<p><a href="{{ this.url }}{{ this.tracking }}"><img height="100" src="{{ url-blogasset }}{{ this.image }}"  alt="{{ this.title }}"/></a></p>
+				<p class="blog">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius secondary ">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<callout>
+		<row class="collapse">
+			<columns large="3" small="12">
+				<img src="{{ url-asset }}tablet.png" alt="Check usage on your childs profile settings" />
+			</columns>
+			<columns large="9" small="12">
+				<h6 style="padding-left: 18px;">Does an internet filter block just websites or actually read and filter the content on the pages?</h6>
+				<button class="radius primary" href="https://www.netnanny.com/v/does-an-internet-filter-just-block-websites-or-actually-read-and-filter-the-content-on-individual-pages/{{{ tracking-campaign }}}201609whatdoesafilterdo{{{ tracking-ace }}}">Learn the difference &raquo;</button>
+			</columns>
+		</row>
+	</callout>
+</container>
+<spacer size="24"></spacer>
