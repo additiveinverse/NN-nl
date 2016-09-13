@@ -1,8 +1,8 @@
 {
-  "name": "foundation-emails-template",
+  "name": "CWemail-template",
   "version": "1.0.0",
   "description": "Basic template for a Foundation for Emails project.",
-  "repository": "zurb/foundation-emails-template",
+  "repository": "git@github.com:additiveinverse/cw-nl.git",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
@@ -46,7 +46,8 @@
     "yargs": "^4.1.0"
   },
   "babel": {
-    "presets": ["es2015"]
+    "presets": [
+      "es2015"
+    ]
   }
-
 }
