@@ -1,0 +1,69 @@
+// BEGIN feature table
+table(style="max-width: 750px", width="750").article.container-row
+	tbody
+		tr
+			td( width="360" ).container-section
+				table
+					tr
+						td.article-news( style="padding: 10px 15px; margin-bottom: 10px")
+							p.article-news-title In the News
+							a( href=path_blog + "why-is-parental-control-software-important/?utm_source=newsletter&utm_medium=link&utm_campaign=JulyNewsletterdifferences&pid=1-248&ace=----ACE_ID----" )
+								img( src=path_newsletter + "avideo.png", width="320", align="center").article-news-image
+								p.article-news-desc Check out how Net Nanny<sup>&reg;</sup> is making a difference in these homes
+					tr
+						td
+							br
+					tr
+						td( style="padding: 10px 15px;").article-featured-header 9 pps to reduce summer learning loss
+					tr
+						td.article-featured
+							// BEGIN feature ARTICLE
+							img( src=path_newsletter + "appsreduce.png", alt="Apps to reduce summer learning loss", width="360" ).article-featured-image
+							p(style="padding: 10px 15px!important;").article-featured-title On average, a student’s learning loss equals about one month on a grade level equivalent scale. Check out these great apps to make sure your kids are ready to go in September!
+							a( style="line-height: 2em; padding:15px 30px;", valign="middle", href=path_blog + "top-9-apps-to-reduce-summer-learning-loss/?utm_source=newsletter&utm_medium=link&utm_campaign=JulyNewslettertop9apps&pid=1-248"+ ace, target="_blank" ).article-featured-CTA &nbsp;&nbsp;Read More&nbsp;&nbsp;
+					tr
+						td
+							br
+
+			td( width="15", style="padding: 10px 15px;" ).container-div
+
+			td( width="360").container-section
+				table
+					tr
+						td(style="padding: 10px 0 0;").article-product
+							// BEGIN feature PRODUCT
+							p(style="padding: 10px 15px!important;").article-product-title In addition to using our parental controls, download the digital contract every family needs to create healthy and safe boundaries
+							a( href= path_blog + "family-contract-for-digital-usage/?utm_source=newsletter&utm_medium=link&utm_campaign=JulyNewsletterparentalcontrols&pid=1-248&ace=----ACE_ID----",  target="_blank").article-product-CTA  &nbsp;&nbsp;get a FREE contract today!&nbsp;&nbsp;
+							br
+							img( src=path_newsletter + "contract.png", width="360", alt="check out our family contract" ).article-product-image
+					tr
+						td
+							br
+					tr
+						td(style="padding: 10px 15px;").article-featured-csr
+							a( href= path_root + "features/remote-management/?utm_source=newsletter&utm_medium=link&utm_campaign=JulyNewsletteradminconsoles&pid=1-248&ace=----ACE_ID----" + ace,  target="_blank" style="cursor:pointer; text-decoration:none;").article-featured-csr-link Use the Net Nanny<sup>&reg;</sup> administration console to manage your parental control settings for every one of your devices.
+								p.article-featured-csr-desc &nbsp;&nbsp;Click here to manage your settings&nbsp;&nbsp;
+					tr
+						td
+							br
+					tr
+						td(style="padding: 10px 15px;").article-feed
+							p.article-feed-title Family Matters
+							p.article-feed-desc Check out the new blog topics that will help parents keep children safe this summer.
+							table.article-feed-list
+								- var feed = [{ "title": "How to help your teen navigate the dangers of social media", "link": "how-to-help-your-teen-navigate/?utm_source=newsletter&utm_medium=link&utm_campaign=201606navigatethedangers&pid=25-1", "img": "201606Howtohelpyourteennavigate-blog.jpg" }, { "title": "The Dangers of underage sexting", "link": "dangers-of-sexting-underage/?utm_source=newsletter&utm_medium=link&utm_campaign=201606dangersofsexting&pid=251-1", "img": "201606dangersofsextingunderage-blog.jpg" }, { "title": "My child saw porn, what should I do?", "link": "my-child-saw-pornography-what-should-i-do/?utm_source=newsletter&utm_medium=link&utm_campaign=201606mychildsawporn&pid=25-1", "img": "201606childsawporn-blog.jpg" }]
+
+								each post in feed
+									tr
+										td( width="80", cellpadding="10" ).article-feed-list-item
+											a( href=path_blog + post.link ).article-feed-list-item-link
+												img( src=path_assets + post.img, width="80", alt= post.title ).article-feed-list-item-img
+										td( style="padding: 5px 10px;" ).article-feed-list-item
+											a( href=path_blog + post.link ).article-feed-list-item-link
+												span.article-feed-list-item-title #{ post.title  }
+
+			tr
+				td(colspan="3").container-section.article-footer
+					a( href="https://www.netnanny.com/products/family-protection-pass/?utm_source=newsletter&utm_medium=link&utm_campaign=JulyNewsletterfilters&pid=1-248&ace=----ACE_ID----")
+						img( src= path_newsletter + "tablet.png", align="left" ).article-footer-image
+						p.article-footer-desc Click here to learn more about our UNIQUE filtering options creating an awesome customer experience. Using dynamic filtering, we’re able to configure categories with flexible Allow/Block options for a better user experience.

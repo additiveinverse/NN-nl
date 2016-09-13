@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+	block vars
+		- var title = "Net Nanny"
+		- var ace = "?ace=----ACE_ID----"
+		- var path_root = "https://www.netnanny.com/"
+		- var path_blog = path_root + "blog/"
+		- var path_newsletter = path_root + "assets/email/newsletter/"
+		- var path_assets = path_root + "assets/blogimages/"
+		- var livepath = path_root
+		- var blogpath = path_assets
+		- var flag_inline = "?__inline=true"
+		- var flag_dev = ""
+
+	head
+		meta(http-equiv="X-UA-Compatible", content="IE=edge,chrome=1")
+		meta(name="viewport", content="width=device-width, initial-scale=1", maximum-scale="1", user-scalable="0")
+		meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+		link( rel="stylesheet", href="nn-email.css" + flag_inline )
+
+		title #{title} Newsletter
+
+	body(lang="en").email
+		.container.email-header
+			include header
+		// -------------------------------------------------------- START copy
+		.container.email-body
+			include body
+		// -------------------------------------------------------- END copy
+		.container.email-footer
+			include footer

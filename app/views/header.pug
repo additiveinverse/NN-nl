@@ -1,0 +1,23 @@
+// START head table
+table(style="max-width: 755px", width="755").container-row
+	tr
+		td(valign="middle").container-section
+			a( href="http://www.netnanny.com/" + ace, target="_blank" )
+				img( src=path_newsletter + "netnanny-symbol.png", width="30", alt="Net Nanny").email-header-logo
+				span.email-header-title #{title}<sup>&reg;</sup> News
+
+		td(valign="middle").email-social.container-section
+			- var socialArr = { "facebook": "https://www.facebook.com/NetNanny/", "twitter": "http	s://www.twitter.com/netnanny/", "Instagram": "https://www.instagram.com/net_nanny/", "pinterest": "https://www.pinterest.com/netnanny/net-nanny/" }
+
+			each val, index in socialArr
+				a( href=val + ace, target="_blank" ).email-social-link
+					img( src=path_newsletter + index + ".png", alt=" + index + ", width="24", height="24", style="margin: 0 3px;"  ).email-social-img
+	tr
+		td(colspan="2").container-section
+			br
+			hr
+	tr
+		td.container-section
+		td(height="30",style="text-align:right; color:#999; line-height:2em; mso-table-rspace:5pt").container-section.email-date July 2016
+
+// END head table

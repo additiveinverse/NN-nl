@@ -1,0 +1,22 @@
+{
+  "name": "CWemail-template",
+  "description": "Email template for content watch... automated processes",
+  "main": "index.html",
+  "authors": [
+    "Richard Bailey"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "normalize-less": "*",
+    "lesshat": "^4.0.1"
+  }
+}

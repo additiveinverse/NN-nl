@@ -1,0 +1,23 @@
+table(style="max-width: 750px", width="750")
+	tr
+		td(colspan=2)
+			hr
+	tr
+		td( valign="middle", height="30").footer-social.container-row
+			- var socialArr = { "facebook": "https://www.facebook.com/NetNanny/", "twitter": "https://www.twitter.com/netnanny/", "Instagram": "https://www.instagram.com/net_nanny/", "pinterest": "https://www.pinterest.com/netnanny/net-nanny/" }
+
+			each val, index in socialArr
+				a( href=val + ace, target="_blank").footer-social-link
+					img( src=path_newsletter + index + ".png", alt=" + index + ", width="25", height="25" ).footer-social-img
+
+		td( valign="middle", height="30").footer-logo.container-row
+			a( href="http://www.netnanny.com/" + ace, target="_blank")
+				img(src=path_newsletter + "netnanny-wordmark.png" + flag_inline, width="140" , alt= title )
+	tr
+		td( colspan="2", valign="middle").footer-copy
+			p You are receiving this message because you purchased or trialed ContentWatch products. <br/> If you would like to unsubscribe from this list, please 
+				a( href=path_root + "account/unsubscribe/?maa=----ENTRANCE_STRING----" + ace, target="_blank" ).link click here
+			p ContentWatch Inc. • 6949 S High Tech Dr • Salt Lake City, UT 84047 <br/> &copy; 2016 ContentWatch Inc., All rights reserved.
+			img( src=path_root + "account/----ACE_ID----email.gif" ).hide
+br
+br

@@ -1,0 +1,13 @@
+{
+	"title": "Net Nanny",
+	"livepath": "https://www.netnanny.com/assets/",
+	"blogpath": "assets/blogimages/",
+	"flag_inline": "?__inline=true",
+	"social": {
+		"facebook": "https://www.facebook.com/NetNanny/",
+		"twitter": "https://www.twitter.com/netnanny/",
+		"Instagram": "https://www.instagram.com/net_nanny/",
+		"pinterest": "https://www.pinterest.com/netnanny/net-nanny/"
+	},
+	"ace": "?ace=----ACE_ID----",
+}
