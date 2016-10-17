@@ -1,0 +1,100 @@
+---
+company: Net Nanny
+subject: When Your Child is the Cyberbully
+date-month: October
+date-year: 2016
+date-vol: III
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201610newsletter3&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+blog: [{
+		"title": "Why we should all care about Unity Day",
+		"url": "https://www.netnanny.com/blog/whyweshouldall/",
+		"image": "201610whyweshouldall.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201610newsletter3&utm_content=201610whyweshouldall&ace=----ACE_ID----"
+	},
+	{
+		"title": "How Predators Could Be Playing Online Games with Your Child",
+		"url": "https://www.netnanny.com/blog/howpredatorscould/",
+		"image": "201610howpredatorscould.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201610newsletter3&utm_content=201610howpredatorscould&ace=----ACE_ID----"
+	},
+	{
+		"title": "Should Your Child BYOD to School",
+		"url": "https://www.netnanny.com/blog/shouldyourchildbyod/",
+		"image": "201610shouldyourchildbyod.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201610newsletter3&utm_content=201610shouldyourchildbyod&ace=----ACE_ID----"
+	}
+]
+---
+<container>
+	<row class="collapse">
+		<columns>
+			<a title="Net Nanny Celebrates Unity Day" href="{{ url-webroot }}products/{{{tracking-campaign}}}201610unityflashsale{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-10-unitydayflash.png" alt="24-Hour Flash Sale on Family Protection Passes" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-blog }}whattodowhenyour/{{{ tracking-campaign }}}201610whattodowhenyour{{{ tracking-ace }}}">
+				<img src="{{ url-asset }}NNL-10-whattodo.png" alt="What to do when your child is the cyberbully" class="text-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}giveaway/what-parents-need-to-know-about-cyberbullying{{{tracking-campaign}}}201610knowaboutcyberbullying{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-10-CBinfographic2.png" alt="What Parents Need to Know About Cyberbullying" class="float-center" />
+			</a>
+			</columns>
+		</columns>
+	</row>
+
+	<row>
+		<columns>
+			<h2 class="title">{{ company }} in the News</h2>
+			<a href="{{ url-blog }}netnannyinherald/{{{ tracking-campaign }}}201610netnannyinherald{{{ tracking-ace }}}">
+				<img src="{{ url-asset }}201610netnannyinherald.jpg" alt="Net Nanny in the News" />
+			</a>
+			<spacer size="9"></spacer>
+			<h5>Did you see us mentioned in the news this week?</h5>
+			<p>Learn about setting social media boundaries with babysitters and the warning signs in texts your child may be using.</p>
+				<button href="{{ url-blog }}netnannyinherald/{{{ tracking-campaign }}}201610netnannyinherald{{{ tracking-ace }}}" class="radius">Read More &raquo;</button>
+		</columns>
+	</row>
+
+	<row>
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+	<row>
+		{{#each blog}}
+			<columns large="4">
+				<p><img height="100" src="https://www.netnanny.com/assets/blogimages/{{ this.image }}"  alt="{{ this.title }}"/></p>
+				<p class="blog">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<callout>
+		<row class="collapse">
+			<columns large="5" small="12">
+				<img src="{{ url-asset }}NNL-10-csr.jpg" alt="How does Net Nanny allow a user to see web pages that contain profanity, but inappropriate words on the screen will be masked?" />
+			</columns>
+			<columns large="7" small="12">
+				<h6>How does Net Nanny allow a parents to pause the internet?</h6>
+				<button class="radius" href="https://www.netnanny.com/features/time-management/{{{ tracking-campaign }}}201610howdoesnetnannyallow{{{ tracking-ace }}}">Learn how! &raquo;</button>
+			</columns>
+		</row>
+	</callout>
+
+</container>
