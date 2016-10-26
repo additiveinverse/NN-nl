@@ -1,0 +1,101 @@
+---
+company: Net Nanny
+subject: YouTube Responsible for Rise in Cyberbullying
+date-month: October
+date-year: 2016
+date-vol: IV
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201610newsletter4&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+blog: [{
+		"title": "4 Surprising Characteristics of Kids Who Cyberbully",
+		"url": "https://www.netnanny.com/blog/4surprisingcharacteristicsof/",
+		"image": "2016104surprisingcharacteristicsof.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201610newsletter4&utm_content=2016104surprisingcharacteristicsof&ace=----ACE_ID----"
+	},
+	{
+		"title": "Should You Be Facebook Friends with Your Child",
+		"url": "https://www.netnanny.com/blog/shouldyoubefacebook/",
+		"image": "201610shouldyoubefacebook.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201610newsletter4&utm_content=201610shouldyoubefacebook&ace=----ACE_ID----"
+	},
+	{
+		"title": "7 Celebrities You Want Your Child to Follow on Social Media",
+		"url": "https://www.netnanny.com/blog/7celebritiesyouwant/",
+		"image": "2016107celebritiesyouwant.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201610newsletter4&utm_content=2016107celebritiesyouwant&ace=----ACE_ID----"
+	}
+]
+---
+<container>
+	<row class="collapse">
+		<columns>
+			<a title="Is YouTube Responsible for the Rise in Cyberbullying" href="{{ url-blog }}isyoutuberesponsible/{{{tracking-campaign}}}201610isyoutuberesponsible{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-10-youtubes.png" alt="Is YouTube Responsible for the Rise in Cyberbullying" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}products/{{{ tracking-campaign }}}201610ds4{{{ tracking-ace }}}">
+				<img src="{{ url-asset }}NNL-10-DS4.png" alt="Don't trust any parental control software... trust Net Nanny" class="text-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}giveaway/when-friends-become-frenemies/{{{tracking-campaign}}}201610 {{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-10-frenemies.jpg" alt="When Friends become Friendamies" class="float-center" />
+			</a>
+			</columns>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<h2 class="title">{{ company }} in the News</h2>
+			<a href="{{ url-blog }}netnannyinadvice{{{ tracking-campaign }}}201610netnannyinadvice{{{ tracking-ace }}}">
+				<img src="{{ url-asset }}NNL-10-hostingadvice.jpg" alt="Net Nanny in the News" />
+			</a>
+			<spacer size="9"></spacer>
+			<p>Content Watch & Net Nanny Help You Control Your Internet Experience: How Their Dynamic Filtering Engine Eliminates Content You Don't Want</p>
+			<button href="{{ url-blog }}netnannyinadvice{{{ tracking-campaign }}}201610netnannyinadvice{{{ tracking-ace }}}" class="radius">Read More &raquo;</button>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+	<row>
+		{{#each blog}}
+			<columns large="4">
+				<p><img height="100" src="https://www.netnanny.com/assets/blogimages/{{ this.image }}"  alt="{{ this.title }}"/></p>
+				<p class="blog">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<callout>
+		<row>
+			<columns large="5" small="12">
+				<spacer size="10"></spacer>
+				<img src="{{ url-asset }}NNL-10-CSR4.jpg" alt="How does Net Nanny block pornography and other inappropriate content?" />
+			</columns>
+			<columns large="7" small="12">
+				<spacer size="9"></spacer>
+				<h6>How does Net Nanny block pornography and other inappropriate content?</h6>
+				<button class="radius" href="{{{ url-webroot }}}/features/porn-blocking/{{{ tracking-campaign }}}201610howdoesnetnannyblockporn{{{ tracking-ace }}}">Learn how! &raquo;</button>
+			</columns>
+		</row>
+	</callout>
+
+</container>
