@@ -1,0 +1,105 @@
+---
+company: Net Nanny
+subject:  Net Nanny Stumps the Kids on Good Morning America
+date-month: Nov.
+date-year: 2016
+date-vol: III
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201611newsletter3&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+blog: [{
+		"title": "Consequences of Sexting in Schools",
+		"url": "https://www.netnanny.com/blog/what-are-the-consequences-of-sexing-in-schools/",
+		"image": "https://www.netnanny.com/assets/blogimages/what-are-the-consequences-of-sexting-in-schools.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201611newsletter3&utm_content=what-are-the-consequences-of-sexing-in-schools&ace=----ACE_ID----"
+	},
+	{
+		"title": "Talking to Your Kids About Online Predators",
+		"url": "https://www.netnanny.com/blog/how-to-talk-to-your-kids-about-online-predators/",
+		"image": "https://www.netnanny.com/assets/blogimages/how-to-talk-to-your-kids-about-online-predators.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201611newsletter3&utm_content=how-to-talk-to-your-kids-about-online-predators&ace=----ACE_ID----"
+	},
+	{
+		"title": "The 7 Myths About Bullying",
+		"url": "https://www.netnanny.com/blog/7-myths-about-bullying/",
+		"image": "https://www.netnanny.com/assets/blogimages/7-myths-about-bullying.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201611newsletter3&utm_content=7-myths-about-bullying&ace=----ACE_ID----"
+	}
+]
+---
+<container>
+	<row class="collapse">
+		<columns>
+		<a href="{{ url-blog }}8-most-dangerous-messaging-apps-for-kids{{{tracking-campaign}}}8-most-dangerous-messaging-apps-for-kids{{{ tracking-ace }}}" target="_blank">
+			<img src="{{ url-asset }}NNL-11-8dangerousapps.jpg" alt="8 Most Dangerous Messaging Apps for Kids" class="text-center" />
+		</columns>
+	</row>
+
+	<row>
+		<columns>
+			<h2 class="title">In The news</h2>
+		</columns>
+	</row>
+	<row>
+		<columns large="4">
+			<a href="{{ url-blog }}net-nanny-stumps-kids-featured-on-abc%27s-good-morning-america/{{{tracking-campaign}}}net-nanny-stumps-kids{{{ tracking-ace }}}" target="_blank">
+				<img src="https://www.netnanny.com/assets/Uploads/net-nanny-stumps-kids-featured-on-abcs-good-morning-america.jpg" alt="ABC-TV’s “Good Morning America” (GMA) conducted an experiment to find out whether children could get around two different parental controls software, Net Nanny and Qustodio. The results were clear – Net Nanny was the only service that the kids could not get around: Net Nanny stumped the children." class="float-left" height="100px" />
+			</a><spacer size="9"></spacer><button class="radius secondary" href="{{ url-blog }}net-nanny-stumps-kids-featured-on-abc%27s-good-morning-america/{{{tracking-campaign}}}net-nanny-stumps-kids{{{ tracking-ace }}}" target="_blank">Watch now</button>
+		</columns>
+		<columns large="8">
+		<p>ABC-TV’s “Good Morning America” (GMA) conducted an experiment to find out whether children could get around two different parental controls software, Net Nanny and Qustodio. The results were clear – Net Nanny was the only service that the kids could not get around: <br/><strong>Net Nanny stumped the children</strong>.</p>
+
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}products/{{{tracking-campaign}}}fallsavingspromo{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-11-fallsavings.jpg" alt="Up to 25% Off All Family Protection Passes" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}giveaway/5-myths-of-dynamic-content-filtering/{{{tracking-campaign}}}5-myths-of-dynamic-content-filtering{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-11-5myths.jpg" alt="5 Myths of Dynamic Content Filtering" class="float-center" />
+			</a>
+			</columns>
+		</columns>
+	</row>
+
+	<row>
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+
+	<row>
+		{{#each blog}}
+			<columns large="4">
+				<p><img height="100" src="{{ url-blogasset }}{{ this.image }}"  alt="{{ this.title }}"/></p>
+				<p class="blog">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius secondary ">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<callout>
+		<row class="collapse">
+			<columns large="4" small="12">
+				<spacer height="12"></spacer>
+				<img src="{{ url-asset }}NNL-compare.png" alt="Not sure how to view Net Nanny Reports?" />
+			</columns>
+			<columns large="8" small="12">
+				<spacer height="12"></spacer>
+				<h6 style="padding-left: 18px;">How does Net Nanny compare to the competition?</h6>
+				<button class="radius primary" href="https://www.netnanny.com/l/compare/{{{ tracking-campaign }}}How-does-Net-Nanny-compare-to-the-competition{{{ tracking-ace }}}">Learn how! &raquo;</button>
+			</columns>
+		</row>
+	</callout>
+</container>
