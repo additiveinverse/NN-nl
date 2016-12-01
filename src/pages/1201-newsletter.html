@@ -1,0 +1,102 @@
+---
+company: Net Nanny
+subject: 5 Mistakes Divorced Parents Make when Navigating the Holidays
+date-month: December
+date-year: 2016
+date-vol: I
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter1&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+Xurl-asset: "/assets/img/"
+blog: [{
+		"title": "5 Reasons Family Dinner Should Be a Priority",
+		"url": "https://www.netnanny.com/blog/5-reasons-family-dinner-should-be-a-priority/",
+		"image": "https://www.netnanny.com/assets/blogimages/5-reasons-family-dinner-should-be-a-priority.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter1&utm_content=5-reasons-family-dinner-should-be-a-priority&ace=----ACE_ID----"
+	},
+	{
+		"title": "7 Steps for a Smartphone Digital Cleanup",
+		"url": "https://www.netnanny.com/blog/7-steps-for-a-smartphone-digital-cleanup/",
+		"image": "https://www.netnanny.com/assets/blogimages/7-steps-for-a-smartphone-digital-cleanup.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter1&utm_content=7-steps-for-a-smartphone-digital-cleanup&ace=----ACE_ID----"
+	},
+	{
+		"title": "Suicide is the #2 Cause of Teen Deaths",
+		"url": "https://www.netnanny.com/blog/suicide-is-the-number-2-cause-of-teen-deaths/",
+		"image": "https://www.netnanny.com/assets/blogimages/suicide-is-the-number-2-cause-of-teen-deaths.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter1&utm_content=suicide-is-the-number-2-cause-of-teen-deaths&ace=----ACE_ID----"
+	}
+]
+---
+<container>
+	<spacer size="18"></spacer>
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-blog }}5-mistakes-divorced-parents-make-when-navigating-the-holidays{{{tracking-campaign}}}5-mistakes-divorced-parents-make-when-navigating-the-holidays{{{ tracking-ace }}}">
+				<img src="{{ url-asset }}NNL-12-5mistakes.jpg" alt="5 Mistakes Divorced Parents Make when Navigating the Holidays" class="text-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns large="12">
+			<a href="{{ url-webroot }}products/{{{tracking-campaign}}}protect-new-devices-promo{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-12-promo1.jpg" alt="Savings of up to 25% off" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-blog }}questions-to-ask-before-buying-a-connected-toy{{{tracking-campaign}}}questions-to-ask-before-buying-a-connected-toy{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-12-fosi1.jpg" alt="Questions to Ask Before Buying Your Child a Connected Toy" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row>
+		<columns><h2 class="title">in the News</h2></columns>
+	</row>
+	<row>
+			<columns large="4" small="12">
+				<center><img src="{{ url-blogasset }}net-nanny-in-the-fosi.jpg" alt="Net Nanny in the News" /></center>
+			</columns>
+			<columns large="8" small="12">
+				<p style="padding-left: 18px;">Net Nanny President, Chis Rothey, Speaker at Family Online Safety Institute Conference</p>
+				<button href="{{ url-blog }}net-nanny-in-the-fosi/{{{ tracking-campaign }}}net-nanny-in-the-fosi{{{ tracking-ace }}}" class="radius secondary">Read More &raquo;</button>
+			</columns>
+	</row>
+
+	<row>
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+
+	<row>
+		{{#each blog}}
+			<columns large="4">
+				<p><img height="100" src="{{ url-blogasset }}{{ this.image }}"  alt="{{ this.title }}"/></p>
+				<p class="blog">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius secondary ">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<callout>
+		<row class="collapse">
+			<columns large="4" small="12">
+				<img src="{{ url-asset }}NNL-compare.png" alt="Not sure how to view Net Nanny Reports?" />
+			</columns>
+			<columns large="9" small="12">
+				<h6 style="padding-left: 18px;">How does Net Nanny compare to the competition?</h6>
+				<button class="radius secondary" href="https://www.netnanny.com/l/compare/{{{ tracking-campaign }}}2016-product-comparision{{{ tracking-ace }}}">Learn how! &raquo;</button>
+			</columns>
+		</row>
+	</callout>
+</container>
+<spacer size="24"></spacer>
