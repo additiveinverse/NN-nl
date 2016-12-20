@@ -1,61 +1,28 @@
-<style type="text/css">
-  body,
-  html, 
-  .body {
-    background: #f3f3f3 !important;
-  }
-  .container.header {
-    background: #f3f3f3;
-  }
-  .body-border {
-    border-top: 8px solid #663399;
-  }
-</style>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{subject}}</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+  </head>
+  <body>
+    <!-- <style> -->
+        <span class="preheader">{{description}}</span>
+    {{> header}}
+    <table class="body">
+      <tr>
+        <td class="center" align="center" valign="top">
+          <center>
+            {{> body}}
+          </center>
+        </td>
+      </tr>
+    </table>
+      {{> footer}}
+    <!-- prevent Gmail on iOS font size manipulation -->
+   <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+  </body>
+</html>
 
-<container class="header">
-  <row>
-    <columns>
-      <h1 class="text-center">Welcome to Kraken Academy</h1>
-
-      <center>
-        <menu class="text-center">
-          <item href="#">About</item>
-          <item href="#">Course List</item>
-          <item href="#">Campus Map</item>
-          <item href="#">Contact</item>
-        </menu>
-      </center>
-
-    </columns>
-  </row>
-</container>
-
-<container class="body-border">
-  <row>
-    <columns>
-
-      <spacer size="32"></spacer>
-
-      <center>
-        <img src="http://placehold.it/200x200">
-      </center>
-
-      <spacer size="16"></spacer>
-
-      <h4>An exciting future of terrorizing sailors awaits you at Kraken Academy.</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa vel architecto, perspiciatis eius cum autem quidem, sunt consequuntur, impedit dolor vitae illum nobis sint nihil aliquid? Assumenda, amet, officia.</p>
-
-      <center>
-        <menu>
-          <item href="#">krakenacademy.com</item>
-          <item href="#">Facebook</item>
-          <item href="#">Twitter</item>
-          <item href="#">(408)-555-0123</item>
-        </menu>
-      </center>
-
-    </columns>
-  </row>
-
-  <spacer size="16"></spacer>
-</container>

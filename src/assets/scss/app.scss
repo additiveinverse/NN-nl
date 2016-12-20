@@ -6,16 +6,12 @@ a h2, a h3, a h4, a h5 {
 	color: $secondary-color;
 }
 
-button.callout {
-	border: none;
-	outline: 0;
-}
-
 .title {
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: 700;
 	letter-spacing: -1px;
+	margin-bottom: 0px;
 }
 
 .blog {
@@ -26,7 +22,7 @@ button.callout {
 	width: auto;
 	margin: $button-margin;
 	Margin: $button-margin;
-	text-align: left;
+	text-align: center;
 	// color: $button-color;
 	// background: $button-background;
 	border: $button-border;
@@ -40,6 +36,13 @@ button.callout {
 	font-size: 28px;
 	padding: map-get($button-padding, default);
 	border: 0 solid $button-background;
+
+	&.callout {
+		border: none;
+		outline: 0;
+	}
+
+
 	&.warning {
 		background: $warning-color;
 		border: 0px solid $warning-color;

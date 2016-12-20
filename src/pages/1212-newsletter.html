@@ -1,0 +1,106 @@
+---
+company: Net Nanny
+subject: Don’t Trust Tech Companies to Remove Hate Speech
+date-month: December
+date-year: 2016
+date-vol: III
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter3&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+Xurl-asset: "/assets/img/"
+
+blog: [{
+		"title": "What Parents Should Know About YouTube",
+		"url": "https://www.netnanny.com/blog/4-things-every-parent-needs-to-know-about-youtube/",
+		"image": "https://www.netnanny.com/assets/blogimages/4-things-every-parent-needs-to-know-about-youtube.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter3&utm_content=4-things-every-parent-needs-to-know-about-youtube&ace=----ACE_ID----"
+	},
+	{
+		"title": "Your Child’s Brain on Porn",
+		"url": "https://www.netnanny.com/blog/your-childs-brain-on-porn/",
+		"image": "https://www.netnanny.com/assets/blogimages/your-childs-brain-on-porn.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter3&utm_content=your-childs-brain-on-porn&ace=----ACE_ID----"
+	},
+	{
+		"title": "You Won’t Believe Who Endorsed Net Nanny",
+		"url": "https://www.netnanny.com/blog/you-wont-believe-who-just-endorsed-net-nanny/",
+		"image": "https://www.netnanny.com/assets/blogimages/you-wont-believe-who-just-endorsed-net-nanny.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter3&utm_content=you-wont-believe-who-just-endorsed-net-nanny&ace=----ACE_ID----"
+	}
+]
+---
+<container>
+	<spacer size="18"></spacer>
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-blog }}dont-trust-tech-companies-to-remove-hate-speech{{{tracking-campaign}}}dont-trust-tech-companies-to-remove-hate-speech{{{ tracking-ace }}}">
+				<img src="{{ url-asset }}NNL-12-socialandhatespeech.png" alt="Don’t Trust Tech Companies to Remove Hate Speech" class="text-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns large="12">
+			<a href="{{ url-webroot }}products/{{{tracking-campaign}}}protect-new-devices-promo{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-12-promo3-sale.jpg" alt="Holiday Savings of Up to 25% Off" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}giveaway/text-slang-for-parents/{{{tracking-campaign}}}text-slang-for-parents{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-12-textalk.jpg" alt="Text Talk a Guide for Parents" class="float-center" />
+			</a>
+		</columns>
+	</row>
+	<spacer size="18"></spacer>
+	<row class="collapse">
+		<columns large="4" small="12" class="collapse">
+			<img src="{{ url-asset }}NN-in-the-news.png" alt="Net Nanny in the News" />
+			<button href="{{ url-blog }}net-nanny-wpost{{{ tracking-campaign }}}net-nanny-wpost{{{ tracking-ace }}}" class="radius secondary">Read More &raquo;</button>
+		</columns>
+		<columns large="8" small="12">
+			<h4 class="title">{{company}} In the News</h4>
+			<b>Experts Agree Net Nanny Keeps Kids Safe</b>
+			<ul>
+			<li><b>Washington Post</b><br/>How to protect kids online: Apps and tactics used by experts and real parents</li>
+			<li><b>WDAM 7, Missisippi News</b><br/>Officials warn of dangerous social media apps</li>
+			<li><b>FOX News</b><br/>Keeping your children safe: Apps and tips to monitor internet activity</li>
+			</ul>
+		</columns>
+	</row>
+
+	<row>
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+
+	<row>
+		{{#each blog}}
+			<columns large="4">
+				<p><img height="100" src="{{ url-blogasset }}{{ this.image }}"  alt="{{ this.title }}"/></p>
+				<p class="blog">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius secondary ">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<callout>
+		<row class="collapse">
+			<columns large="4" small="12">
+				<img src="{{ url-asset }}NNL-compare.png" alt="Not sure how to view Net Nanny Reports?" />
+			</columns>
+			<columns large="9" small="12">
+				<h6 style="padding-left: 18px;">How does Net Nanny compare to the competition?</h6>
+				<button class="radius secondary" href="https://www.netnanny.com/l/compare/{{{ tracking-campaign }}}2016-product-comparision{{{ tracking-ace }}}">Learn how! &raquo;</button>
+			</columns>
+		</row>
+	</callout>
+</container>
+<spacer size="24"></spacer>

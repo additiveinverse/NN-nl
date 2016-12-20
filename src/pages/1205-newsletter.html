@@ -1,0 +1,108 @@
+---
+company: Net Nanny
+subject: Celebrities & Teenagers Targeted by Twitter Trolls
+date-month: December
+date-year: 2016
+date-vol: II
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter2&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+Xurl-asset: "/assets/img/"
+
+blog: [{
+		"title": "7 Tips to Mixing Faiths & Cultures in Your Holiday Celebration",
+		"url": "https://www.netnanny.com/blog/7-tips-to-mixing-faiths-and-cultures-in-your-holiday-celebration/",
+		"image": "https://www.netnanny.com/assets/blogimages/7-tips-to-mixing-faiths-and-cultures-in-your-holiday-celebration.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter2&utm_content=7-tips-to-mixing-faiths-and-cultures-in-your-holiday-celebration&ace=----ACE_ID----"
+	},
+	{
+		"title": "The Power of Likes in Social Media",
+		"url": "https://www.netnanny.com/blog/the-power-of-likes-in-social-media/",
+		"image": "https://www.netnanny.com/assets/blogimages/the-power-of-likes-in-social-media.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter2&utm_content=the-power-of-likes-in-social-media&ace=----ACE_ID----"
+	},
+	{
+		"title": "4 Ways Parental Control Software Limits Cyberbullying",
+		"url": "https://www.netnanny.com/blog/4-ways-parental-control-software-limits-cyberbullying/",
+		"image": "https://www.netnanny.com/assets/blogimages/4-ways-parental-control-software-limits-cyberbullying.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter2&utm_content=4-ways-parental-control-software-limits-cyberbullying&ace=----ACE_ID----"
+	}
+]
+---
+<container>
+	<spacer size="18"></spacer>
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-blog }}celebrities-and-teenagers-targeted-by-twitter-trolls{{{tracking-campaign}}}celebrities-and-teenagers-targeted-by-twitter-trolls{{{ tracking-ace }}}">
+				<img src="{{ url-asset }}NNL-12-twittertrolls.png" alt="Celebrities & Teenagers Targeted by Twitter Trolls" class="text-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns large="12">
+			<a href="{{ url-webroot }}products/{{{tracking-campaign}}}protect-new-devices-promo{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-12-promo2.jpg" alt="Holiday Savings of Up to 25% Off" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}giveaway/text-slang-for-parents/{{{tracking-campaign}}}text-slang-for-parents{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-12-textalk.jpg" alt="Text Talk a Guide for Parents" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row>
+		<columns><h2 class="title">in the News</h2></columns>
+	</row>
+	<row class="collapse">
+			<columns large="3" small="12">
+				<center><img style="height: 90px!important" src="{{ url-webroot }}assets/Uploads/TodayLogoFeature.jpg" alt="Net Nanny in the News"  width="auto" /></center>
+			</columns>
+			<columns large="9" small="12">
+				<h3>Net Nanny Wows Parents on NBC’s Today Show</h3>
+			</columns>
+	</row>
+	<row  class="collapse">
+		<columns>
+			<p style="padding-left: 18px;">Net Nanny allows you to control your kids’ internet activity remotely. The cool thing about (Net Nanny) is that you can actually choose the exact website that you want blocked on your kid’s phones, explained Rossen. But it goes a step further - you can block the type of websites so dating sites, nudity, pornography, tobacco - you can block those. But it goes even a step further than that. Suicide for example. You can set it to warn mode and you get a warning if your kid types suicide.</p>
+			<button href="{{ url-blog }}net-nanny-wows-parents-on-today-show/{{{ tracking-campaign }}}net-nanny-wows-parents-on-today-show{{{ tracking-ace }}}" class="radius secondary">Watch Now &raquo;</button>
+		</columns>
+	</row>
+
+	<row>
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+
+	<row>
+		{{#each blog}}
+			<columns large="4">
+				<p><img height="100" src="{{ url-blogasset }}{{ this.image }}"  alt="{{ this.title }}"/></p>
+				<p class="blog">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius secondary ">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<callout>
+		<row class="collapse">
+			<columns large="4" small="12">
+				<img src="{{ url-asset }}NNL-compare.png" alt="Not sure how to view Net Nanny Reports?" />
+			</columns>
+			<columns large="9" small="12">
+				<h6 style="padding-left: 18px;">How does Net Nanny compare to the competition?</h6>
+				<button class="radius secondary" href="https://www.netnanny.com/l/compare/{{{ tracking-campaign }}}2016-product-comparision{{{ tracking-ace }}}">Learn how! &raquo;</button>
+			</columns>
+		</row>
+	</callout>
+</container>
+<spacer size="24"></spacer>

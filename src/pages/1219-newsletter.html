@@ -1,0 +1,90 @@
+---
+company: Net Nanny
+subject: When Parents Are Too Plugged In
+date-month: December
+date-year: 2016
+date-vol: IV
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter4&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+Xurl-asset: "/assets/img/"
+
+blog: [{
+		"title": "Put your Mobile Device on a Digital Diet",
+		"url": "https://www.netnanny.com/blog/put-your-mobile-device-on-a-digital-diet/",
+		"image": "https://www.netnanny.com/assets/blogimages/put-your-mobile-device-on-a-digital-diet.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter4&utm_content=put-your-mobile-device-on-a-digital-diet&ace=----ACE_ID----"
+	},
+	{
+		"title": "Roasting the new Cyberbullying Trend",
+		"url": "https://www.netnanny.com/blog/roasting-the-new-cyberbullying-trend/",
+		"image": "https://www.netnanny.com/assets/blogimages/roasting-the-new-cyberbullying-trend.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter4&utm_content=roasting-the-new-cyberbullying-trend&ace=----ACE_ID----"
+	},
+	{
+		"title": "9 Steps Parents Can Take When Your Child is Cyberbullied",
+		"url": "https://www.netnanny.com/blog/9-steps-parents-can-take-when-your-child-is-cyber-bullied/",
+		"image": "https://www.netnanny.com/assets/blogimages/9-steps-parents-can-take-when-your-child-is-cyberbullied.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter4&utm_content=9-steps-parents-can-take-when-your-child-is-cyber-bullied&ace=----ACE_ID----"
+	}
+]
+---
+<container>
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-blog }}parents-plug-in-by-unplugging{{{tracking-campaign}}}parents-plug-in-by-unplugging{{{ tracking-ace }}}">
+				<img src="{{ url-asset }}NNL-12-parentsunplugged.png" alt="Parents: Plug In By Unplugging" class="text-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns large="12">
+			<a href="{{ url-webroot }}products/{{{tracking-campaign}}}protect-new-devices-promo{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-12-promo4.jpg" alt="Holiday Savings of Up to 25% Off" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}giveaway/plugged-in-parents/{{{tracking-campaign}}}plugged-in-parents{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-12-pluggedin.jpg" alt="Text Talk a Guide for Parents" class="float-center" />
+			</a>
+			<p style="padding:  0 18px 18px; background-color: #323A8F; color: #FFF"><b>Plugged-in Parents:  Attitudes, Behaviors and Role Models</b><br/>
+Common Sense Media provides a snapshot of plugged-in parents' media use, attitudes toward their tweens’ and teens' media use, and a look into the ways that parents mediate, monitor, and manage media.</p>
+		</columns>
+	</row>
+
+	<row>
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+
+	<row>
+		{{#each blog}}
+			<columns large="4">
+				<p><img height="100" src="{{ url-blogasset }}{{ this.image }}"  alt="{{ this.title }}"/></p>
+				<p class="blog">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius secondary ">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<callout>
+		<row class="collapse">
+			<columns large="4" small="12">
+				<img src="{{ url-asset }}NNL-compare.png" alt="Not sure how to view Net Nanny Reports?" />
+			</columns>
+			<columns large="9" small="12">
+				<h6 style="padding-left: 18px;">How does Net Nanny compare to the competition?</h6>
+				<button class="radius secondary" href="https://www.netnanny.com/l/compare/{{{ tracking-campaign }}}2016-product-comparision{{{ tracking-ace }}}">Learn how! &raquo;</button>
+			</columns>
+		</row>
+	</callout>
+</container>
