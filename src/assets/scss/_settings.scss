@@ -19,7 +19,7 @@ $dark-blue: rgb( 38,37,79);
 $purple: rgb(38, 37, 79);
 $purple-light: rgb(120, 113, 150);
 $red: rgb( 234, 21, 67 );
-$green: rgb( 172, 226, 121);
+$green: #6FA535;
 
 $primary-color: $purple-light;
 $secondary-color: $purple;
@@ -35,11 +35,11 @@ $pre-color: $primary-color;
 
 $global-width: 555px;
 $global-width-small: 95%;
-$global-gutter: 10px;
+$global-gutter: 18px;
 $body-background: $white;
 $container-background: transparent;
 $global-padding: 16px;
-$global-margin: 16px;
+$global-margin: 10px;
 $global-radius: 50px;
 $global-rounded: 500px;
 $global-breakpoint: $global-width + $global-gutter;

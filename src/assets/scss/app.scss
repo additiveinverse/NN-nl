@@ -6,27 +6,38 @@ a h2, a h3, a h4, a h5 {
 	color: $secondary-color;
 }
 
-button.callout {
-	border: none;
-	outline: 0;
-}
-
 .title {
 	text-transform: uppercase;
 	font-size: 24px;
 	font-weight: 700;
 	letter-spacing: -1px;
+	margin-bottom: 0px;
 }
 
 .blog {
 	text-transform: capitalize;
 }
 
+.icon {
+	font-family: $body-font-family;
+	font-size: $h5-font-size;
+	font-weight: $button-font-weight;
+	background: #e7582e;
+	padding: 10px 0;
+	border-radius: $global-rounded;
+	width: 50px;
+	height: 30px;
+	text-align: center;
+	display: block;
+	color: $button-color;
+	border: 3px solid white;
+}
+
 .button {
 	width: auto;
 	margin: $button-margin;
 	Margin: $button-margin;
-	text-align: left;
+	text-align: center;
 	// color: $button-color;
 	// background: $button-background;
 	border: $button-border;
@@ -40,6 +51,12 @@ button.callout {
 	font-size: 28px;
 	padding: map-get($button-padding, default);
 	border: 0 solid $button-background;
+
+	&.callout {
+		border: none;
+		outline: 0;
+	}
+
 	&.warning {
 		background: $warning-color;
 		border: 0px solid $warning-color;
@@ -54,4 +71,9 @@ button.callout {
 			border: 0px solid darken($warning-color, 10%);
 		}
 	}
+}
+
+.email-social-img {
+	width: 36px;
+	height: 36px;
 }
