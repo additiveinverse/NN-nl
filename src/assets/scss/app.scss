@@ -18,6 +18,21 @@ a h2, a h3, a h4, a h5 {
 	text-transform: capitalize;
 }
 
+.icon {
+	font-family: $body-font-family;
+	font-size: $h5-font-size;
+	font-weight: $button-font-weight;
+	background: #e7582e;
+	padding: 10px 0;
+	border-radius: $global-rounded;
+	width: 50px;
+	height: 30px;
+	text-align: center;
+	display: block;
+	color: $button-color;
+	border: 3px solid white;
+}
+
 .button {
 	width: auto;
 	margin: $button-margin;
@@ -42,7 +57,6 @@ a h2, a h3, a h4, a h5 {
 		outline: 0;
 	}
 
-
 	&.warning {
 		background: $warning-color;
 		border: 0px solid $warning-color;
@@ -57,4 +71,9 @@ a h2, a h3, a h4, a h5 {
 			border: 0px solid darken($warning-color, 10%);
 		}
 	}
+}
+
+.email-social-img {
+	width: 36px;
+	height: 36px;
 }

@@ -1,0 +1,102 @@
+---
+company: Net Nanny
+subject: Not All the News Was Bad in 2016
+date-month: December
+date-year: 2016
+date-vol: V
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter5&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+
+blog: [{
+		"title": "All Screen Time is Not Created Equal",
+		"url": "https://www.netnanny.com/blog/all-screen-time-is-not-created-equal/",
+		"image": "https://www.netnanny.com/assets/blogimages/all-screen-time-is-not-created-equal.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter5&utm_content=all-screen-time-is-not-created-equal&ace=----ACE_ID----"
+	},
+	{
+		"title": "6 Concepts to Teach Your Child to be a Upstander",
+		"url": "https://www.netnanny.com/blog/6-concepts-to-teach-your-child-to-be-a-upstander/",
+		"image": "https://www.netnanny.com/assets/blogimages/6-concepts-to-teach-your-child-to-be-a-upstander.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter5&utm_content=6-concepts-to-teach-your-child-to-be-a-upstander&ace=----ACE_ID----"
+	},
+	{
+		"title": "Talk to Your Kids About Rating Teachers",
+		"url": "https://www.netnanny.com/blog/talk-to-your-kids-about-rating-teachers/",
+		"image": "https://www.netnanny.com/assets/blogimages/talk-to-your-kids-about-rating-teachers.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=201612newsletter5&utm_content=talk-to-your-kids-about-rating-teachers&ace=----ACE_ID----"
+	}
+]
+---
+<container>
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-blog }}not-all-news-was-bad-in-2016{{{tracking-campaign}}}not-all-news-was-bad-in-2016{{{ tracking-ace }}}">
+				<img src="{{ url-asset }}NNL-12-notallnews.png" alt="Not All the News Was Bad in 2016" class="text-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns large="12">
+			<a href="{{ url-webroot }}products/{{{tracking-campaign}}}protect-new-devices-promo5{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-12-promo5.jpg" alt="Savings of Up to 25% Off" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}giveaway/plugged-in-parents/{{{tracking-campaign}}}plugged-in-parents{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}NNL-12-pluggedin.jpg" alt="Text Talk a Guide for Parents" class="float-center" />
+			</a>
+			<p style="padding:  0 18px 18px; background-color: #323A8F; color: #FFF"><b>Plugged-in Parents:  Attitudes, Behaviors and Role Models</b><br/>
+Common Sense Media provides a snapshot of plugged-in parents' media use, attitudes toward their tweens’ and teens' media use, and a look into the ways that parents mediate, monitor, and manage media.</p>
+		</columns>
+	</row>
+
+	<spacer size="18"></spacer>
+	<row class="collapse">
+		<columns large="8" small="12">
+			<h4 class="title" style="padding-left: 18px">{{company}} In the News</h4>
+			<p  style="padding-left: 18px">Net Nanny was featured in Huffington Post taking a humorous approach to social media. </p>
+			<button href="{{ url-blog }}net-nanny-in-huffington-post/{{{ tracking-campaign }}}net-nanny-in-huffington-post{{{ tracking-ace }}}" class="radius secondary">Read More &raquo;</button>
+		</columns>
+		<columns large="4" small="12" class="collapse">
+			<img src="{{ url-asset }}NN-in-the-news.png" alt="Net Nanny in the News" />
+		</columns>
+	</row>
+
+
+	<row>
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+
+	<row>
+		{{#each blog}}
+			<columns large="4">
+				<p><img height="100" src="{{ url-blogasset }}{{ this.image }}"  alt="{{ this.title }}"/></p>
+				<p class="blog">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius secondary ">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<callout>
+		<row class="collapse">
+			<columns large="4" small="12">
+				<img src="{{ url-asset }}NNL-compare.png" alt="Not sure how to view Net Nanny Reports?" />
+			</columns>
+			<columns large="9" small="12">
+				<h6 style="padding-left: 18px;">How does Net Nanny compare to the competition?</h6>
+				<button class="radius secondary" href="https://www.netnanny.com/l/compare/{{{ tracking-campaign }}}2016-product-comparision{{{ tracking-ace }}}">Learn how! &raquo;</button>
+			</columns>
+		</row>
+	</callout>
+</container>
