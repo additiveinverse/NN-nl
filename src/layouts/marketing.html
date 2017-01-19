@@ -1,86 +1,39 @@
-<style type="text/css">
-  body,
-  html, 
-  .body {
-    background: #f3f3f3 !important;
-  }
-</style>
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>{{subject}}</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+  </head>
+  <body>
+    <!-- <style> -->
+    <span class="preheader">{{description}}</span>
+    <table class="body">
+      <tr>
+        <td class="center" align="center" valign="top">
+          <center>
+            {{> body}}
+          </center>
+        </td>
+      </tr>
+    </table>
+<spacer size="18"></spacer>
 
 <container>
-  <row>
-    <columns large="4">
-      <center>
-        <img src="http://placehold.it/125x200">
-      </center>
+  <row class="collapse">
+    <columns large="8" small="12">
+      {{> footer-copyright}}
     </columns>
-    <columns large="8">
-      <h1>Do Something Radical With This App.</h1>
-      <button class="large" href="#">Sign Up</button>
+    <columns large="4" small="12">
+      <b>Follow us</b><br/>
+      {{> footer-social}}
     </columns>
   </row>
-
-  <spacer size="16"></spacer>
-
-  <row>
-    <columns>
-      <h3 class="text-center">It's Never Been Easier to Do Things.</h3>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur pariatur unde magni repudiandae totam, accusamus facere eligendi. Ad nobis eius porro saepe et ab, aliquid, sed mollitia cumque suscipit aperiam.</p>
-    </columns>
-  </row>
-  <row>
-    <columns large="4">
-      <center>
-        <img src="http://placehold.it/50x50">
-      </center>
-      <h5 class="text-center">Feature One</h5>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quod quam unde earum.</p>
-    </columns>
-    <columns large="4">
-      <center>
-        <img src="http://placehold.it/50x50">
-      </center>
-      <h5 class="text-center">Feature Two</h5>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quod quam unde earum.</p>
-    </columns>
-    <columns large="4">
-      <center>
-        <img src="http://placehold.it/50x50">
-      </center>
-      <h5 class="text-center">Feature Three</h5>
-      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, quod quam unde earum.</p>
-    </columns>
-  </row>
-
-  <spacer size="16"></spacer>
-
-  <row>
-    <columns>
-      <h3 class="text-center">What Are You Waiting For? Get Started Today.</h3>
-      
-      <spacer size="16"></spacer>
-
-      <button class="large expand" href="#">Sign Up</button>
-    </columns>
-  </row>
-
-  <row class="collapsed footer">
-    <columns>
-      <spacer size="16"></spacer>
-      <p class="text-center">@copywrite nobody<br/>
-      <a href="#">hello@nocopywrite.com</a> | <a href="#">Manage Email Notifications</a> | <a href="#">Unsubscribe</a></p>
-      <center>
-        <menu>
-          <item><img src="http://placehold.it/25" alt=""></item>
-          <item><img src="http://placehold.it/25" alt=""></item>
-          <item><img src="http://placehold.it/25" alt=""></item>
-          <item><img src="http://placehold.it/25" alt=""></item>
-          <item><img src="http://placehold.it/25" alt=""></item>
-        </menu>
-      </center>
-    </columns>
-  </row>
-
-  <spacer size="16"></spacer>
-
 </container>
+
+    <!-- prevent Gmail on iOS font size manipulation -->
+   <div style="display:none; white-space:nowrap; font:15px courier; line-height:0;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+---
+company: Net Nanny
+subject: Are Smart Phones Fueling Your Teen's Insomnia?
+date-month: Jan.
+date-year: 2017
+date-vol: III
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+blog: [{
+		"title": "Research Links Heavy Social Media Usage to Depression in Kids",
+		"url": "https://www.netnanny.com/blog/research-links-heavy-social-media-usage-to-depression-in-kids/",
+		"image": "https://www.netnanny.com/assets/blogimages/research-links-heavy-social-media-usage-to-depression-in-kids.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content=research-links-heavy-social-media-usage-to-depression-in-kids&ace=----ACE_ID----"
+	},
+	{
+		"title": "Screentime: How much is too much?",
+		"url": "https://www.netnanny.com/blog/screentime-how-much-is-too-much/",
+		"image": "https://www.netnanny.com/assets/blogimages/screentime-how-much-is-too-much.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content=screentime-how-much-is-too-much&ace=----ACE_ID----"
+	},
+	{
+		"title": "Teens Breaking the Digital Divide with Grandparents",
+		"url": "https://www.netnanny.com/blog/teens-breaking-the-digital-divide-with-grandparents/",
+		"image": "https://www.netnanny.com/assets/blogimages/teens-breaking-the-digital-divide-with-grandparents.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content=teens-breaking-the-digital-divide-with-grandparents&ace=----ACE_ID----"
+	}
+]
+---
+<p class="collapse" style="text-align: center; background-color: #24205D; color: #FFF; padding: 4px; font-size: 10px;">{{ date-month }} Vol.{{ date-vol }} {{ date-year }}</p>
+<container>
+	<row class="collapse">
+		<columns large="12">
+			<a href="{{ url-blog }}to-post-or-not-to-post-social-media-etiquette{{{tracking-campaign}}}to-post-or-not-to-post-social-media-etiquette{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}2017-01-postornot.png" alt="To Post or Not to Post: Social Media Etiquette" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns large="12">
+			<a href="{{ url-webroot }}products/{{{tracking-campaign}}}january-promo3{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}2017-1-promo3.jpg" alt="Save up to 25% Off All Family Protection Passes" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row>
+		<columns bgcolor="#48A4BF">
+			<a href="{{ url-webroot }}giveaway/mobile-apps-infographic/{{{tracking-campaign}}}mobile-apps-infographic{{{ tracking-ace }}}" target="_blank">
+				<spacer size=15></spacer>
+				<img src="{{ url-asset }}2017-01-appgraphic.jpg" alt="Mobile App Infographic: What parents need to know about mobile apps" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row>
+		<columns>
+			<spacer size=30></spacer>
+			<h2 class="title">{{ company }} in the News</h2>
+		</columns>
+	</row>
+	<row>
+		<columns large="3" small="12">
+			<img src="{{ url-asset }}NN-in-the-news.png"  />
+		</columns>
+		<columns large="9" small="12">
+			<p style="padding-left: 18px;">This week, we’re excited to be mentioned in Life Hack as they discuss 5 useful apps for parents to monitor their teenage children. In addition, we were mentioned by the Greater Atlanta Christian School blog giving parents 4 tips for keeping kids safe on social. As always, we hope you find these tips useful in the world of digital parenting!</p>
+			<button class="radius secondary" href="{{ url-blog }}net-nanny-in-lifehack/{{{ tracking-campaign }}}net-nanny-in-lifehack{{{ tracking-ace }}}">Read More</button>
+		</columns>
+	</row>
+
+	<row>
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+
+	<row>
+		{{#each blog}}
+			<columns large="4">
+				<p><img height="100" src="{{ url-blogasset }}{{ this.image }}"  alt="{{ this.title }}"/></p>
+				<p class="blog">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius secondary ">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<row class="collapse" bgcolor="#3EABD4">
+		<columns large="8">
+			<a href="https://www.netnanny.com/{{{ tracking-campaign }}}product-comparision{{{ tracking-ace }}}">
+				<img src="{{ url-asset }}protection.jpg" alt="Not sure how to view Net Nanny Reports?" />
+			</a>
+		</columns>
+		<columns large="4" small="12">
+			<spacer size="18"></spacer>
+			<h6 style="padding-left: 18px; color: #fff">Are you aware of potential online threats?</h6>
+			<button class="radius secondary" href="https://www.netnanny.com/{{{ tracking-campaign }}}product-comparision{{{ tracking-ace }}}">Learn how! &raquo;</button>
+		</columns>
+		<columns large="2">	</columns>
+	</row>
+</container>

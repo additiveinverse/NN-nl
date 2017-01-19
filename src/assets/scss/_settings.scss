@@ -46,20 +46,17 @@ $global-breakpoint: $global-width + $global-gutter;
 
 // 2. Grid
 // -------
-
 $grid-column-count: 12;
 $column-padding-bottom: $global-padding;
 $container-radius: 0;
 
 // 3. Block Grid
 // -------------
-
 $block-grid-max: 8;
 $block-grid-gutter: $global-gutter;
 
 // 4. Typography
 // -------------
-
 $global-font-color: $medium-gray;
 $body-font-family: Helvetica, Arial, sans-serif;
 $global-font-weight: normal;
