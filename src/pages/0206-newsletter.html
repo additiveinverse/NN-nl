@@ -1,0 +1,90 @@
+---
+company: Net Nanny
+subject: How to Talk to Your Kids About Sexting
+date-month: February
+date-year: 2017
+date-vol: II
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+blog: [{
+		"title": "4 Secret Messaging Apps Parents Need to Know About",
+		"url": "https://www.netnanny.com/blog/4-secret-messaging-apps-parents-need-to-know-about/",
+		"image": "https://www.netnanny.com/assets/blogimages/4-secret-messaging-apps-parents-need-to-know-about.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content=4-secret-messaging-apps-parents-need-to-know-about&ace=----ACE_ID----"
+	},
+	{
+		"title": "Single Dad Connects with Daughter Over a Braid",
+		"url": "https://www.netnanny.com/blog/single-dad-connects-with-daughter-over-a-braid/",
+		"image": "https://www.netnanny.com/assets/blogimages/single-dad-connects-with-daughter-over-a-braid.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content=single-dad-connects-with-daughter-over-a-braid&ace=----ACE_ID----"
+	},
+	{
+		"title": "Lego Life Social Network Arrives For 13 & Under",
+		"url": "https://www.netnanny.com/blog/6-reasons-parents-should-love-lego-life-social-network/",
+		"image": "https://www.netnanny.com/assets/blogimages/6-reasons-parents-should-love-lego-life-social-network.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content=6-reasons-parents-should-love-lego-life-social-network&ace=----ACE_ID----"
+	}
+]
+---
+<container>
+	<row class="collapse">
+		<columns large="12">
+			<a href="{{ url-blog }}how-to-talk-to-your-kids-about-sexting{{{tracking-campaign}}}how-to-talk-to-your-kids-about-sexting{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}2017-02-sexting.png" alt="How to Talk to Your Kids About Sexting" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}products/{{{tracking-campaign}}}february-promo2{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}2017-02-promo2.png" alt="Desktop and Mobile coverage: a perfect Match! Save up to 25% Off All Family Protection Passes plus free Net Nanny Social" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns  bgcolor="#A6C5E8">
+			<a href="{{ url-webroot }}giveaway/emoji-sexting-slang-and-symbols/{{{tracking-campaign}}}emoji-sexting-slang-and-symbols{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}2017-02-emoji.png" alt="The Growing Problem of Easy Access to Porn" class="float-center" />
+			</a>
+			<p style="padding: 0 35px">We’re taking a look at the sneaky (and creative) ways teens are using acronyms, slangs, and symbols to sext.</p>
+		</columns>
+	</row>
+	<spacer size="18"></spacer>
+	<row>
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+
+	<row>
+		{{#each blog}}
+			<columns large="4" class="blog">
+				<img height="100" src="{{ url-blogasset }}{{ this.image }}"  alt="{{ this.title }}" class="blog-image" />
+				<p class="blog-title">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius secondary blog-button">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<row class="collapse" bgcolor="#3EABD4">
+		<columns large="6" style="padding-bottom: 0px">
+			<a href="https://www.netnanny.com/l/are-you-aware-of-potential-online-threats/{{{ tracking-campaign }}}online-threats{{{ tracking-ace }}}">
+				<img src="{{ url-asset }}protection-update.jpg" alt="Check out our video that helps you identify online threats" />
+			</a>
+		</columns>
+		<columns large="6" small="12" style="padding-bottom: 0">
+			<spacer size="18"></spacer>
+			<h6 style="padding-left: 18px; color: #fff">Are you aware of potential online threats?</h6>
+			<button class="radius secondary" href="https://www.netnanny.com/l/are-you-aware-of-potential-online-threats/{{{ tracking-campaign }}}online-threats{{{ tracking-ace }}}">Learn More! &raquo;</button>
+		</columns>
+		<columns large="2">	</columns>
+	</row>
+
+</container>

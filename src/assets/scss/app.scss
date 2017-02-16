@@ -15,7 +15,21 @@ a h2, a h3, a h4, a h5 {
 }
 
 .blog {
-	text-transform: capitalize;
+	&-title {
+		text-transform: capitalize;
+	}
+	&-image {
+
+	}
+	&-button {
+		padding-left: 0;
+	}
+}
+
+.news {
+	&-button {
+		padding-left: 0;
+	}
 }
 
 .icon {
