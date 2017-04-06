@@ -1,0 +1,127 @@
+---
+company: Net Nanny
+subject: Slaves to the Screen, How Young Kids Are Getting Addicted
+date-month: April
+date-year: 2017
+date-vol: I
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+blog: [{
+		"title": "What is the Best Game Console for Kids?",
+		"url": "https://www.netnanny.com/what-is-the-best-game-console-for-kids/",
+		"image": "https://www.netnanny.com/assets/blogimages/what-is-the-best-game-console-for-kids.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content=what-is-the-best-game-console-for-kids&ace=----ACE_ID----"
+	},
+	{
+		"title": "Say Hello to Stories on Facebook",
+		"url": "https://www.netnanny.com/blog/say-hello-to-stories-on-facebook/",
+		"image": "https://www.netnanny.com/assets/blogimages/say-hello-to-stories-on-facebook.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content=say-hello-to-stories-on-facebook&ace=----ACE_ID----"
+	},
+	{
+		"title": "How to Set Parental Controls for Apple",
+		"url": "https://www.netnanny.com/blog/apples-built-in-parental-controls/",
+		"image": "https://www.netnanny.com/assets/blogimages/apples-built-in-parental-controls.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content=apples-built-in-parental-controls&ace=----ACE_ID----"
+	}
+]
+---
+<container>
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-blog }}how-young-kids-are-getting-addicted{{{tracking-campaign}}}how-young-kids-are-getting-addicted{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}2017-04-screenslaves.png" alt="Slaves to the Screen: How Young Kids Are Getting Addicted" class="text-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns large="12">
+			<img src="{{ url-asset }}2017-04-IQ-playing.png" alt="Children don't need more things. The best toys a child can have is a parent who gets down on the floor and plays with them." class="float-center" />
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns large="12">
+			<a href="{{ url-webroot }}products/{{{tracking-campaign}}}2017-04-promo1{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}2017-04-promo1.png" alt="25% Off All Family Protection Passes & Free Net Nanny Social (A $20 Value)" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}giveaway/anatomy-of-a-selfie/{{{tracking-campaign}}}anatomy-of-a-selfie{{{ tracking-ace }}}">
+				<img src="{{ url-asset }}2017-03-selfieanatomy.png" alt="The Anatomy Of A Great Selfie" />
+			</a>
+		</columns>
+	</row>
+	<spacer size="18"></spacer>
+
+	<row class="collapse">
+			<columns><h2 class="title">{{ company }} in the News</h2></columns>
+	</row>
+	<row class="collapse">
+			<columns large="4" small="12">
+				<img src="{{ url-blogasset }}net-nanny-recommended-to-parents-by-industry-leaders.jpg" alt="Net Nanny in the News" />
+			</columns>
+			<columns large="8" small="12">
+				<p style="padding-left: 18px">Net Nanny was featured in Dr. Meg Meeker’s article on Momzette and by ABC 2 Baltimore. Both recommend Net Nanny’s parental control software to parents to monitor kid’s activity and to help keep them safe from potential predators.</p>
+				<button href="{{ url-blog }}net-nanny-recommended-to-parents-by-industry-leaders{{{ tracking-campaign}}}net-nanny-recommended-to-parents-by-industry-leaders{{{ tracking-ace }}}" class="radius secondary">Read More</button>
+			</columns>
+	</row>
+
+	<spacer size="18"></spacer>
+
+	<row bgcolor="#3EABD4">
+		<columns>
+			<spacer size="18"></spacer>
+			<img src="{{ url-asset }}2017-03-safteyspot1.png" alt="Safety Spot" />
+		</columns>
+	</row>
+	<row bgcolor="#3EABD4">
+		<columns>
+			<h3 style="color: white;">Protect Your iCloud Account</h3>
+			<p style="color: white;">A hacker group known as, Turkish Crime Family, is threatening to access over 250 million iCloud and Apple ID accounts on April 7th, effectively locking out account owners. It is recommended for all iCloud users to change your password and enable two-factor authentication for your accounts.
+			</p>
+			</columns>
+	</row>
+
+	<spacer size="18"></spacer>
+
+	<row>
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+
+	<row>
+		{{#each blog}}
+			<columns large="4">
+				<p><a href="{{ this.url }}{{{ this.tracking }}}"><img height="100" src="{{ url-blogasset }}{{ this.image }}"  alt="{{ this.title }}"/></a></p>
+				<p class="blog">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius secondary ">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<row class="collapse" bgcolor="#3EABD4">
+		<columns large="6" style="padding-bottom: 0px">
+			<a href="https://www.netnanny.com/two-clicks-away/{{{ tracking-campaign }}}two-clicks-away{{{ tracking-ace }}}" >
+				<img src="{{ url-asset }}2017-csr-2clicks.jpg" alt="Check out our video that helps you identify online threats" style="margin: 18px"/>
+			</a>
+		</columns>
+		<columns large="5" small="12" style="padding-bottom: 0px">
+			<spacer size="9"></spacer>
+			<h5 style="padding-left: 18px; color: #fff">Two Clicks Away</h5>
+			<p style="padding-left: 18px; color: #fff">How Your Kids Learn About Dangerous Content Online?</p>
+			<button class="radius secondary" href="https://www.netnanny.com/two-clicks-away/{{{ tracking-campaign }}}two-clicks-away{{{ tracking-ace }}}">Learn More! &raquo;</button>
+		</columns>
+		<columns large="2">	</columns>
+	</row>
+</container>
