@@ -1,0 +1,137 @@
+---
+company: Net Nanny
+subject: X-Plan - Giving Your Child A Way Out
+date-month: April
+date-year: 2017
+date-vol: III
+tracking-ace: "&ace=----ACE_ID----"
+tracking-campaign: "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content="
+url-webroot: "https://www.netnanny.com/"
+url-blog: "https://www.netnanny.com/blog/"
+url-blogasset: "https://www.netnanny.com/assets/blogimages/"
+url-asset: "https://www.netnanny.com/assets/email/newsletter/"
+blog: [{
+		"title": "7 Must-Have Apps For Homeschoolers",
+		"url": "https://www.netnanny.com/7-must-have-apps-for-homeschoolers/",
+		"image": "https://www.netnanny.com/assets/blogimages/7-must-have-apps-for-homeschoolers.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content=7-must-have-apps-for-homeschoolers&ace=----ACE_ID----"
+	},
+	{
+		"title": "New Tools to Fight Revenge Porn",
+		"url": "https://www.netnanny.com/blog/new-tools-to-fight-porn/",
+		"image": "https://www.netnanny.com/assets/blogimages/new-tools-to-fight-porn.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content=new-tools-to-fight-porn&ace=----ACE_ID----"
+	},
+	{
+		"title": "Safe Solution: Net Nanny & YouTube’s Safety Mode",
+		"url": "https://www.netnanny.com/blog/net-nanny-youtubes-safety-mode/",
+		"image": "https://www.netnanny.com/assets/blogimages/net-nanny-youtubes-safety-mode.jpg",
+		"tracking": "?pid=1-249&utm_source=newsletter&utm_medium=email&utm_campaign=2017newsletter&utm_content=net-nanny-youtubes-safety-mode&ace=----ACE_ID----"
+	}
+]
+---
+<container>
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-blog }}xplan-giving-your-child-a-way-out{{{tracking-campaign}}}xplan-giving-your-child-a-way-out{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}2017-04-xplan.png" alt="X-Plan: Giving Your Child A Way Out" class="text-center" />
+			</a>
+		</columns>
+	</row>
+
+	<callout>
+	<row class="collapse">
+		<columns large="12">
+			<h2 class="title">Weekly Dose Of Inspiration</h2>
+			<img src="{{ url-asset }}2017-04-.png" alt=" " class="float-center" />
+		</columns>
+	</row>
+	<row class="collapse">
+		<columns>
+			<menu>
+			<item><b>Find us on social</b></item>
+			<item class="email-social-link" href="https://www.facebook.com/NetNanny/?ace=----ACE_ID----" target="_blank">
+				<img class="email-social-img" src="{{ url-asset }}social/facebook.png" alt="facebook" width="24" height="24">
+			</item>
+			<item class="email-social-link" href="https://www.twitter.com/netnanny/?ace=----ACE_ID----" target="_blank">
+				<img class="email-social-img" src="{{ url-asset }}social/twitter.png" alt="twitter" width="24" height="24">
+			</item>
+			<item class="email-social-link" href="https://www.instagram.com/net_nanny/?ace=----ACE_ID----" target="_blank">
+				<img class="email-social-img" src="{{ url-asset }}social/Instagram.png" alt="instagram" width="24" height="24">
+			</item>
+			<item class="email-social-link" href="https://www.pinterest.com/netnanny/net-nanny/?ace=----ACE_ID----" target="_blank">
+				<img class="email-social-img" src="{{ url-asset }}social/pinterest.png" alt="Pinterest" width="24" height="24">
+			</item>
+		</menu>
+		</columns>
+	</row>
+	</callout>
+	<spacer size="18"></spacer>
+	<row class="collapse">
+		<columns large="12">
+			<a href="{{ url-webroot }}products/{{{tracking-campaign}}}2017-04-promo3{{{ tracking-ace }}}" target="_blank">
+				<img src="{{ url-asset }}2017-04-promo3.png" alt="25% Off All Family Protection Passes & Free Net Nanny Social (A $20 Value)" class="float-center" />
+			</a>
+		</columns>
+	</row>
+
+	<row class="collapse">
+		<columns>
+			<a href="{{ url-webroot }}giveaway/xplan/{{{tracking-campaign}}}xplan{{{ tracking-ace }}}">
+				<img src="{{ url-asset }}2017-04-xplan-giveaway.png" alt="xplan - " />
+			</a>
+		</columns>
+	</row>
+	<spacer size="18"></spacer>
+
+	<row bgcolor="#3EABD4">
+		<columns>
+			<spacer size="18"></spacer>
+			<img src="{{ url-asset }}2017-03-safteyspot1.png" alt="Safety Spot" />
+		</columns>
+	</row>
+	<row bgcolor="#3EABD4">
+		<columns>
+			<h3 style="color: white;">-</h3>
+			<p style="color: white;">
+			-
+			<a href="https://thenextweb.com/google/2017/03/27/mail-messenger-whatsapp-google-play/%23.tnw_VrcCLADp/#.tnw_boL5VfDg"> - </a>
+			</p>
+			</columns>
+	</row>
+
+	<spacer size="18"></spacer>
+
+	<row>
+		<columns>
+			<h2 class="title">Family Matters</h2>
+			<p>Here are 3 of our readers' top favorite blog posts.</p>
+		</columns>
+	</row>
+
+	<row>
+		{{#each blog}}
+			<columns large="4">
+				<p><a href="{{ this.url }}{{{ this.tracking }}}"><img height="100" src="{{ url-blogasset }}{{ this.image }}"  alt="{{ this.title }}"/></a></p>
+				<p class="blog">{{ this.title }}</p>
+				<button href="{{ this.url }}{{{ this.tracking }}}" class="radius secondary ">Read More &raquo;</button>
+			</columns>
+		{{/each}}
+	</row>
+
+	<row bgcolor="#3EABD4">
+		<columns large="6" style="padding-bottom: 0px">
+			<spacer size="18"></spacer>
+			<a href="https://www.netnanny.com/two-clicks-away/{{{ tracking-campaign }}}two-clicks-away{{{ tracking-ace }}}" >
+				<img src="{{ url-asset }}2017-csr-2clicks.jpg" alt="Check out our video that helps you identify online threats" />
+			</a>
+		</columns>
+		<columns large="6" small="12" style="padding-bottom: 0px">
+			<spacer size="9"></spacer>
+			<h5 style="color: #fff">Two Clicks Away</h5>
+			<p style="color: #fff">Parents need to know how easy it is for children to view inappropriate content online.</p>
+			<button class="radius secondary" href="https://www.netnanny.com/two-clicks-away/{{{ tracking-campaign }}}two-clicks-away{{{ tracking-ace }}}">Learn More! &raquo;</button>
+		</columns>
+		<columns large="2">	</columns>
+	</row>
+</container>
