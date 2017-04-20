@@ -52,9 +52,6 @@ a h2, a h3, a h4, a h5 {
 	margin: $button-margin;
 	Margin: $button-margin;
 	text-align: center;
-	// color: $button-color;
-	// background: $button-background;
-	border: $button-border;
 	font-family: $body-font-family;
 	font-size: map-get($button-font-size, default);
 	font-weight: $button-font-weight;
@@ -64,7 +61,12 @@ a h2, a h3, a h4, a h5 {
 	line-height: 1.2;
 	font-size: 28px;
 	padding: map-get($button-padding, default);
-	border: 0 solid $button-background;
+
+	&.knockout {
+		background: transparent;
+		border: 1px solid #fff;
+		margin: 0 auto;
+	}
 
 	&.callout {
 		border: none;
