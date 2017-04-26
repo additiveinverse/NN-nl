@@ -2,7 +2,7 @@
   "name": "CWemail-template",
   "version": "1.0.0",
   "description": "Basic template for a Foundation for Emails project.",
-  "repository": "git@github.com:additiveinverse/NN-nl.git",
+  "repository": "git@bits.contentwatch.com:cw-zift/NN-nl.git",
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
